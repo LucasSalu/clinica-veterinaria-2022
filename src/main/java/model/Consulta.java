@@ -45,6 +45,24 @@ public class Consulta {
     public void setHistorico(String historico) {
         this.historico = historico;
     }
+
+    public List<Exame> getExames() {
+        return exames;
+    }
+
+    public List<Veterinario> getVeterinarios() {
+        return veterinarios;
+    }
+
+    public void addExames(Exame exame) {
+        this.exames.add(exame);
+    }
+
+    public void addVeterinarios(Veterinario veterinario) {
+        this.veterinarios.add(veterinario);
+    }
+    
+    
    
     
 }

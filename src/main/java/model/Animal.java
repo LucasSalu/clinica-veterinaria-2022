@@ -63,6 +63,16 @@ public class Animal {
     public void setEspecie(String especie) {
         this.especie = especie;
     }
+
+    public void addTratamento(Tratamento tratamento) {
+        this.tratamentos.add(tratamento);
+    }
+
+    public ArrayList getTratamentos() {
+        return tratamentos;
+    }
+    
+    
     
     
     

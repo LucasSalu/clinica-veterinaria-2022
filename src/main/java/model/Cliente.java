@@ -4,6 +4,9 @@
  */
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author tc.luslopes
@@ -15,6 +18,7 @@ public class Cliente {
     private String telefone;
     private String email;
     private Long Cep;
+    List<Animal> animais = new ArrayList<>();
 
     public Cliente(Integer id, String nome, String telefone, String email, Long Cep) {
         this.id = id;
@@ -58,6 +62,14 @@ public class Cliente {
 
     public void setCep(Long Cep) {
         this.Cep = Cep;
+    }
+
+    public List<Animal> getAnimais() {
+        return animais;
+    }
+
+    public void addAnimais(Animal animal) {
+        this.animais.add(animal);
     }
     
     
