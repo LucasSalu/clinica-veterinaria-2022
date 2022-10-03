@@ -45,7 +45,7 @@ public class Tratamento {
         this.fim = fim;
     }
 
-    public void add(Consulta consulta) {
+    public void addConsulta(Consulta consulta) {
         this.consultas.add(consulta);
     }
     

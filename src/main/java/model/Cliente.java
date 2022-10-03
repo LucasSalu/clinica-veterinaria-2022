@@ -15,17 +15,18 @@ public class Cliente {
     
     private Integer id;
     private String nome;
-    private String telefone;
+    private String cep;
     private String email;
-    private Long Cep;
+    private String telefone;
+
     List<Animal> animais = new ArrayList<>();
 
-    public Cliente(Integer id, String nome, String telefone, String email, Long Cep) {
+    public Cliente(Integer id, String nome, String Cep, String email, String telefone) {
         this.id = id;
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
-        this.Cep = Cep;
+        this.cep = Cep;
     }
 
     public Integer getId() {
@@ -44,8 +45,8 @@ public class Cliente {
         return email;
     }
 
-    public Long getCep() {
-        return Cep;
+    public String getCep() {
+        return cep;
     }
 
     public void setNome(String nome) {
@@ -60,8 +61,8 @@ public class Cliente {
         this.email = email;
     }
 
-    public void setCep(Long Cep) {
-        this.Cep = Cep;
+    public void setCep(String Cep) {
+        this.cep = Cep;
     }
 
     public List<Animal> getAnimais() {

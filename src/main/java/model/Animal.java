@@ -5,7 +5,6 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 
 /**
  *
@@ -15,12 +14,12 @@ public class Animal {
     
     private Integer id;
     private String nome;
-    private Calendar nascimento;
-    private Integer sexo;
+    private Integer nascimento;
+    private String sexo;
     private String especie;
     private ArrayList tratamentos = new ArrayList<>();
     
-    public Animal(Integer id, String nome, Calendar nascimento, Integer sexo, String especie) {
+    public Animal(Integer id, String nome, Integer nascimento, String sexo, String especie) {
         this.id = id;
         this.nome = nome;
         this.nascimento = nascimento;
@@ -36,11 +35,11 @@ public class Animal {
         return nome;
     }
 
-    public Calendar getNascimento() {
+    public Integer getNascimento() {
         return nascimento;
     }
 
-    public Integer getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
@@ -52,11 +51,11 @@ public class Animal {
         this.nome = nome;
     }
 
-    public void setNascimento(Calendar nascimento) {
+    public void setNascimento(Integer nascimento) {
         this.nascimento = nascimento;
     }
 
-    public void setSexo(Integer sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
